@@ -7,6 +7,8 @@
 #pragma warning(disable: 4996)
 
 #define maxCharCount 50
+#define defaultMovies 0
+#define defaultPark 'N'
 
 using namespace std;
 
@@ -18,6 +20,14 @@ public:
         numMovies = numMoviesInput;
         whichPark = whichParkInput;
     }
+
+    DisneyCharacter(string nameInput, string creationDateInput) {
+        name = nameInput;
+        creationDate = creationDateInput;
+        numMovies = defaultMovies;
+        whichPark = defaultPark;
+    }
+
 private:
     string name;
     string creationDate;
