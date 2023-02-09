@@ -16,4 +16,4 @@ private:
     string creationDate;
     int numMovies_;
     char whichPark_;
-};
+}; 
