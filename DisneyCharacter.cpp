@@ -11,9 +11,16 @@
 using namespace std;
 
 class DisneyCharacter {
+public:
+    DisneyCharacter(string nameInput, string creationDateInput, int numMoviesInput, char whichParkInput) {
+        name = nameInput;
+        creationDate = creationDateInput;
+        numMovies = numMoviesInput;
+        whichPark = whichParkInput;
+    }
 private:
     string name;
     string creationDate;
-    int numMovies_;
-    char whichPark_;
+    int numMovies;
+    char whichPark;
 }; 
