@@ -8,8 +8,12 @@
 
 #include "DisneyCharacter.h"
 #include <cctype>
+#include <string>
+#include <string.h>
 
 #pragma warning(disable: 4996)
+
+using namespace std;
 
 DisneyCharacter::DisneyCharacter(string nameInput, string creationDateInput, int numMoviesInput, char whichParkInput) :name(nameInput), creationDate(defaultDate), numMovies(defaultMovies), whichPark(defaultPark) {
     // name validation check
@@ -113,7 +117,6 @@ void DisneyCharacter::SetNumMovies(int numMoviesInput)
 bool DisneyCharacter::SetWhichPark(char whichParkInput)
 {
     bool returnValue = false;
-    
     if (whichParkInput == 'A' || whichParkInput == 'C' || whichParkInput == 'E' || whichParkInput == 'M' || whichParkInput == 'S') {
         whichPark = whichParkInput;
         returnValue = true;

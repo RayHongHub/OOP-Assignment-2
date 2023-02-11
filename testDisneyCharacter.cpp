@@ -9,14 +9,12 @@
 #include "DisneyCharacter.h"
 
 int main() {
-	/*DisneyCharacter Mickey("Mickey", "1929-01-01", 100, 'M');
+	DisneyCharacter Mickey("Mickey", "1929-01-01", 100, 'M');
 	DisneyCharacter Minnie("Minnie", "1930-01-01");
 	Minnie.SameMovies(Mickey);
 	Minnie.ShowInfo();
 	Mickey.ShowInfo();
 	Minnie.SetWhichPark('E');
-	Minnie.ShowInfo();*/
-	DisneyCharacter Test("test", "1920-10-01", 10, 'A');
-	Test.ShowInfo();
+	Minnie.ShowInfo();
 	return 0;
 }
