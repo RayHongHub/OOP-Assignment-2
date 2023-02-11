@@ -3,7 +3,7 @@
 * Project: OOP:: A-02: Disney Character Class
 * By: Ray Hong (8665442)
 * Date: February 11th, 2023
-* Description: This file contains the definitions of prototypes for the constructors, destructor, accessors, mutators.
+* Description: This file contains the constants, include directives as well as the prototypes for the constructors, destructor, accessors, mutators.
 */
 
 #pragma once
@@ -11,6 +11,7 @@
 #include <string.h>
 #include <string>
 #include <iostream>
+#include <cctype>
 
 using namespace std;
 

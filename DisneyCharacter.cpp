@@ -6,10 +6,8 @@
 * Description: This file contains the two overloaded constructors, destructors, accessors for each data member and mutators for numMovies and whichPark.
 */
 
-#include <string.h>
-#include <string>
-#include <iostream>
 #include "DisneyCharacter.h"
+#include <cctype>
 
 #pragma warning(disable: 4996)
 
@@ -115,8 +113,13 @@ void DisneyCharacter::SetNumMovies(int numMoviesInput)
 bool DisneyCharacter::SetWhichPark(char whichParkInput)
 {
     bool returnValue = false;
-    if (whichParkInput == 'A' || whichParkInput == 'C' || whichParkInput == 'E' || whichParkInput == 'M' || whichParkInput == 'N' || whichParkInput == 'S') {
+    
+    if (whichParkInput == 'A' || whichParkInput == 'C' || whichParkInput == 'E' || whichParkInput == 'M' || whichParkInput == 'S') {
         whichPark = whichParkInput;
+        returnValue = true;
+    }
+    else {
+        whichPark = 'N';
         returnValue = true;
     }
     return returnValue;
