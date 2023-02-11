@@ -149,8 +149,6 @@ void DisneyCharacter::ShowInfo(void) {
         cout << "Disney Studios";
         break;
     case 'N':
-        cout << "Not Placed";
-        break;
     default:
         cout << "Not Placed";
         break;
